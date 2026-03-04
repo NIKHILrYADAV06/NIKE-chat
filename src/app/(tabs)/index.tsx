@@ -619,7 +619,7 @@ const ChatsScreen = () => {
             channelRenderFilterFn={channelRenderFilterFn}
             onSelect={(channel) => {
               setChannel(channel);
-              router.push(`/channel/${channel.id}` as any);
+              router.push(`/channel/${channel.id}`);
             }}
             EmptyStateIndicator={() => <EmptyState search={search} />}
             additionalFlatListProps={{
