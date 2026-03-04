@@ -111,9 +111,7 @@ function SettingsModal({
   const backdropOp = useRef(new Animated.Value(0)).current;
 
   const [notifications, setNotifications] = useState(true);
-  const [darkMode, setDarkMode] = useState(true);
   const [sounds, setSounds] = useState(false);
-  const [analytics, setAnalytics] = useState(true);
 
   useEffect(() => {
     if (visible) {
@@ -155,25 +153,11 @@ function SettingsModal({
       setter: setNotifications,
     },
     {
-      icon: "moon-outline",
-      label: "Dark Mode",
-      color: "#A78BFA",
-      value: darkMode,
-      setter: setDarkMode,
-    },
-    {
       icon: "volume-medium-outline",
       label: "Sounds",
       color: "#34D399",
       value: sounds,
       setter: setSounds,
-    },
-    {
-      icon: "bar-chart-outline",
-      label: "Analytics",
-      color: "#60A5FA",
-      value: analytics,
-      setter: setAnalytics,
     },
   ];
 
@@ -622,7 +606,7 @@ const ProfileScreen = () => {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "#0A0F1E" }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "black" }}>
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: 32 }}

@@ -77,7 +77,7 @@ const ChatClient = ({
     tokenOrProvider: tokenProvider,
   });
 
-  if (!chatClient) return <FullScreenLoader message="Loading chat..." />;
+  if (!chatClient) return <FullScreenLoader message="NIKE-Chat..." />;
 
   return (
     <OverlayProvider value={{ style: studyBuddyTheme }}>
